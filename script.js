@@ -7,4 +7,17 @@ function cal()
   document.getElementById("result").innerHTML=""+si;
 
 }
-        
+function getval()
+{
+ document.getElementById("r").innerHTML=document.getElementById("rate").value+"%";
+}
+function check()
+{
+  var val = document.getElementById("pri").value;
+var x= parseInt(val);
+if(val==0 || val<0)
+{
+  alert("Please Enter proper value Value"); 
+}
+
+}
