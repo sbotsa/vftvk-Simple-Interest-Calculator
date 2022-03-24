@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>
-Simple Interest Calculator
+Web App – Simple Interest Calculator
 </title>
 <script src="script.js"> </script>
 
@@ -10,12 +10,13 @@ Simple Interest Calculator
 <table  border="1" align="center" width="40%">
 <tr>
 <th> Amount:</th>
-<td> <input type="text" name="pri" id="pri"> </td>
+<td> <input type="text" name="pri" id="pri" onblur="check()" value="0"> </td>
 </tr>
 <tr>
 <th> Rate :</th>
 <td>
-<input type="range" name="rate" id="rate" max="50">
+<input type="range" name="rate" id="rate" max="20" onclick="getval()">
+<label id="r"> </lable>
 </td>
 </tr>
 <tr>
@@ -39,7 +40,7 @@ Simple Interest Calculator
 <th>
 Interest :</th>
 <td>
-<lable id="result"></label>
+<lable id="result" style="color:yellow"></label>
 </td>
 </tr>
 <tr>
@@ -48,5 +49,8 @@ Interest :</th>
 </td>
 </tr>
 </table>
+<p>
+&copy; Everyone Can Get Rich
+</p>
 </body>
 </html>
