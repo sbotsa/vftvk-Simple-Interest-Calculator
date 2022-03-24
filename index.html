@@ -1,27 +1,41 @@
 <html>
-    <head>
-    <!-- <script src="script.js"></script> -->
-        <script>
-            function compute()
-{
-    /* var p = document.getElementById("principal").value;
-    var r = document.getElementById("rate").value;
-    var t = document.getElementById("years").value;
-    var si=(p*t*r)/100;
-    alert(si);
-    document.getElementById("result").innerHTML=" "+si; */
-    alert("Hello");
-}</script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+<head>
+<title>
+Simple Interest Calculator
+</title>
+<script src="calscript.js"> </script>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+</head>
+<body>
+<table  border="1" align="center" width="40%">
+<tr>
+<th> Amount:</th>
+<td> <input type="text" name="pri" id="pri"> </td>
+</tr>
+<tr>
+<th> Rate :</th>
+<td>
+<input type="text" name="rate" id="rate">
+</td>
+</tr>
+<tr>
+<th> NO.Of Years </th>
+<td>
+<input type="text" name="years" id="years">
+</td>
+</tr>
+<tr>
+<th>
+Interest :</th>
+<td>
+<lable id="result"></label>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="button" value="Calulate" onclick="cal()">
+</td>
+</tr>
+</table>
+</body>
 </html>
