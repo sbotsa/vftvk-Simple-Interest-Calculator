@@ -1,6 +1,9 @@
 function compute()
 {
-    p = document.getElementById("principal").value;
-    
+    var p = document.getElementById("principal").value;
+    var r = document.getElementById("principal").value;
+    var y = document.getElementById("principal").value;
+    var si=(p*t*r)/100;
+    document.getElementById("result").innerHTML=" "+si;
 }
         
