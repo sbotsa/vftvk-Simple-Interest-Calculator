@@ -15,13 +15,24 @@ Simple Interest Calculator
 <tr>
 <th> Rate :</th>
 <td>
-<input type="text" name="rate" id="rate">
+<input type="range" name="rate" id="rate" max="50">
 </td>
 </tr>
 <tr>
 <th> NO.Of Years </th>
 <td>
-<input type="text" name="years" id="years">
+<select name="years" id="years">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option> 
+</select>
 </td>
 </tr>
 <tr>
@@ -33,7 +44,7 @@ Interest :</th>
 </tr>
 <tr>
 <td colspan="2">
-<input type="button" value="CalCulate" onclick="cal()">
+<input type="button" value="Compute Interest" onclick="cal()">
 </td>
 </tr>
 </table>
